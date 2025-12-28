@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
-    @vite('resources/css/app.css') <!-- ili gde ti je Tailwind CSS -->
+    @vite('resources/css/app.css')
     @livewireStyles
 </head>
 <body class="bg-gray-100 dark:bg-gray-900">
@@ -14,7 +14,7 @@
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
 
-        {{-- Header sa login/registracija ili dashboard --}}
+        {{-- Header sa login/register dashboard --}}
         <div class="flex justify-between items-center mb-6">
             <h1 class="text-3xl font-bold text-gray-900 dark:text-white">Our Shop</h1>
 
@@ -37,7 +37,7 @@
             </div>
         </div>
 
-        {{-- Glavni shop container --}}
+        {{-- Shop container --}}
         <div class="relative h-full flex-1 overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700 p-4 bg-white dark:bg-neutral-800 shadow-lg">
             @livewire('product-list')
         </div>
